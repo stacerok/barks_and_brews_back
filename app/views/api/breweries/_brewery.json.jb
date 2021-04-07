@@ -1,0 +1,9 @@
+{
+  id: brewery.id,
+  name: brewery.name,
+  address: brewery.address,
+  phone: brewery.phone,
+  email: brewery.email,
+  website: brewery.website,
+  description: brewery.description,
+}

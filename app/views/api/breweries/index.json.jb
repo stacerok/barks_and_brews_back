@@ -1,0 +1,3 @@
+@breweries.map do |brewery| 
+  render partial: "brewery.json.jb", locals: { brewery: brewery }
+end

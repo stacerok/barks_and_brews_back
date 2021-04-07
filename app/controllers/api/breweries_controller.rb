@@ -9,7 +9,7 @@ class Api::BreweriesController < ApplicationController
 
   def show
     @brewery = Brewery.find_by(id: params[:id])
-    render "show.json.jbuilder"
+    render "show.json.jb"
   end
 
   # ** IF TIME, ADD CREATE FUNCTION **

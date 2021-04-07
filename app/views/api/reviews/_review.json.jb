@@ -1,0 +1,7 @@
+{
+  id: review.id,
+  user_id: review.user_id,
+  brewery_id: review.brewery_id,
+  review: review.review,
+  rating: review.rating,
+}
