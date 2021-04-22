@@ -8,11 +8,10 @@ class Api::ReviewsController < ApplicationController
 
   def create
     @review = Review.new(
-      # user_id: params[:user_id],
       brewery_id: params[:brewery_id],
       review: params[:review],
       rating: params[:rating],
-      user_id: current_user.id
+      user_id: current_user.id,
     )
     if @review.save
       render "show.json.jb"
@@ -21,9 +20,21 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
+  def update
+    review_id = params[:id]
+    @review = Review.find_by(id: review_id)
+
+    @review.brewery_id = @review.brewery_id
+    @review.review = params[:review] || @review.review
+    @review.rating = params[:rating] || @review.rating
+
+    @review.save
+    render "show.json.jb"
+  end
+
   def show
     @review = Review.find_by(id: params[:id])
-    render "show.json.jbuilder"
+    render "show.json.jb"
   end
 
   def destroy
