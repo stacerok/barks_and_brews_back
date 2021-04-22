@@ -1,1 +1,11 @@
-render partial: "brewery.json.jb", locals: { brewery: @brewery }
+brewery = render partial: "brewery.json.jb", locals: { brewery: @brewery }
+
+# render partial: "brewery.json.jb", locals: { brewery: @brewery }
+
+
+# student = render partial: "student.json.jb", locals: { student: @student }
+
+brewery[:reviews] = @brewery.reviews.map do |review|
+  render partial: "/api/reviews/review", locals: { review: review }
+end
+brewery
