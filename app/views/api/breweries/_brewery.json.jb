@@ -7,4 +7,5 @@
   website: brewery.website,
   description: brewery.description,
   image: brewery.image,
+  reviews: brewery.reviews
 }

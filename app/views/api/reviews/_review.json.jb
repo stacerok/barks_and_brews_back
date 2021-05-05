@@ -1,6 +1,7 @@
 {
   id: review.id,
   user_id: review.user_id,
+  updated_at: review.updated_at,
   brewery_id: review.brewery_id,
   brewery_name: review.brewery.name,
   review: review.review,
