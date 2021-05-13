@@ -7,6 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+User.create(name: "Stacie", email: "stacie@example.com", password: "password", password_confirmation: "password")
+User.create(name: "Raymond", email: "raymond@example.com", password: "password", password_confirmation: "password")
+User.create(name: "Andre", email: "andre@example.com", password: "password", password_confirmation: "password")
+
 Brewery.create(name: 'Jailbreak Brewery', address: '9445 Washington Blvd N Ste F, Laurel, MD 20723', phone: '(443) 345-9699', email: 'info@jailbreakbrewing.com', website: 'http://www.jailbreakbrewing.com/', description: 'Outdoor Beer Garden, Food, Family Friendly', image: 'https://pbs.twimg.com/media/EZrGmwNWAAAC8HJ.jpg')
 Brewery.create(name: 'Checkerspot Brewing', address: '1399 S Sharp St, Baltimore, MD 21230', phone: '(443) 388-8912', email: '', website: 'http://www.checkerspotbrewing.com', description: 'Outdoor Patio', image: 'https://www.southbmore.com/wp-content/uploads/2019/04/IMG_9598.jpg')
 Brewery.create(name: 'Monument City Brewing', address: '1 N Haven St, Baltimore, MD 21224', phone: '443) 529-8131', email: 'info@mcbrewingco.com', website: 'http://www.monumentcitybrewing.com/', description: 'Outdoor Seating', image: 'https://www.baltimoresun.com/resizer/S5AS1STBrMGmTVgZJD1JM33Pep4=/800x420/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/EMHZFIECRRASRLCZJEUPWZACXI.png')
